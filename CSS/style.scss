@@ -1,0 +1,151 @@
+$thema-blue: midnightblue;
+$thema-green: darkcyan;
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+  -webkit-text-size-adjust: 100%;
+  letter-spacing: 1.3px;
+  word-break: break-all;
+  ul {
+    list-style: none;
+  }
+  span,
+  p,
+  a {
+    text-decoration: none;
+  }
+}
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+  .nav {
+    display: flex;
+    flex-direction: row;
+    .nav-list {
+      .nav-list__item {
+        display: inline-block;
+        .nav-list__link {
+          display: block;
+          .nav-list__link--eng {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+.section {
+  position: relative;
+  height: 75vh;
+  display: flex;
+
+  .section__bg-img {
+    position: absolute;
+    width: 100%;
+  }
+  .section-ttl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    color: gray;
+    height: 75vh;
+
+    .section-ttl__bg--dot {
+      background-image: radial-gradient($thema-blue 10%, transparent 5%);
+      background-size: 10px 10px;
+      .section-ttl__text {
+        transform: rotate(90deg);
+        font-size: 5em;
+      }
+    }
+  }
+  .container {
+    position: absolute;
+    width:100%;
+    .container__inner {
+      position: static;
+      .section-main {
+        .section-main__top {
+          font-size: 2em;
+        }
+        .section-main__heading {
+          font-size: 3em;
+        }
+        .section-main__lead {
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+}
+.card-tel {
+  background-color: $thema-blue;
+  display: flex;
+  display: inline-block;
+  color: white;
+  .card-tel__num {
+    display: inline-block;
+  }
+  .card-tel__time {
+    display: block;
+  }
+}
+.btn-contact {
+  background-color: $thema-green;
+  width: 10em;
+  height: 3em;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  .btn-contact__text {
+    display: inline-block;
+  }
+}
+.btn-detail {
+  @include flexCenter();
+  height: 2em;
+  width: 10em;
+  border: 1px solid $thema-blue;
+  .btn-detail__text {
+    display: inline-block;
+  }
+  .btn-detail__arrow {
+    display: inline-block;
+  }
+}
+.section--top {
+  .section-top__heading {
+    left: 10%;
+    font-size: 3rem;
+    color: $thema-blue;
+    background-color: white;
+  }
+}
+.information{
+  
+  @include flexCenter();
+  background-color: white;
+
+}
+.container__inner--blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog-list {
+  background-color: white;
+  display: inline;
+  padding:5%;
+}
