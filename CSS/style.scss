@@ -5,7 +5,7 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.3em;
+  line-height: 1.5;
   color: #333;
   -webkit-text-size-adjust: 100%;
   letter-spacing: 1.3px;
@@ -26,10 +26,9 @@ body {
 }
 //--COMPONENTS--
 .section {
-  margin: 3vh 0;
+  margin-bottom: 3vh;
   position: relative;
   display: flex;
-  min-height: 60vh;
 
   .section__bg-img {
     position: absolute;
@@ -37,12 +36,13 @@ body {
   }
   .container {
     position: absolute;
-    width: 100%;
     .container__inner {
       position: static;
-      @include flexCenter();
-        padding: 5% 5%;
+      display: flex;
+      align-items: flex-start;
+      width:100%;
       flex-wrap: wrap;
+      flex-direction: column;
     }
   }
 }
@@ -64,27 +64,28 @@ body {
   }
 }
 .section-ttl--left {
-  left: 5%;
+  left: 0;
 }
 .section-ttl--right {
-  right: 5%;
+  right: 0;
 }
 .section-main {
+  width:100%;
   display: flex;
+  align-items: center;
   .section-main__top {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .section-main__heading {
     background-color: $thema-blue;
-    padding: 0.3em;
-    font-size: 2.5em;
+    font-size:2em;
     color: white;
   }
   .section-main__lead {
     font-size: 1.3em;
   }
   .section-main__lead--em {
-    font-size: 4em;
+    font-size: 3.3em;
   }
 }
 .wrap-contact {
@@ -195,12 +196,15 @@ body {
   .container-top__inner {
     flex-direction: column;
     .section-top__heading {
-      display: inline-block;
+      margin-right: auto;
       background-color: white;
+      color: $thema-blue;
       font-size: 3em;
+      line-height: 1.8;
     }
     .section-top__text {
-      display: inline-block;
+      margin-right: auto;
+
       background-color: white;
     }
   }
@@ -220,23 +224,40 @@ body {
 }
 //--CONCEPT--
 .section-concept {
+  height: 500px;
+  padding-left:10%;
   .container__inner {
     .section-main__img {
       display: inline-block;
-      width:40% ;
+      width: 40%;
     }
-    .section-main__content{
-      margin-left:10px;
-      .section-main__heading{
-        margin-left:5px;
-        line-height: 1.2em;
+    .section-main__wrap {
+      margin-left: 5%;
+      .section-main__heading {
+        line-height: 1.8em;
       }
+    }
+    .section__text{
+      margin:15px 0;
+      width:80%;
+    }
+    .btn-detail{
+      margin:0 auto;
     }
   }
 }
 //--FEATRES--
+.section--features{
+
+}
 //--SERVICE--
+.section--service{
+
+}
 //--WORK--
+.section--work{
+  
+}
 //--BLOG--
 .container-blog__inner {
   display: flex;
