@@ -18,84 +18,92 @@
         <ul class="nav-list">
           <li class="nav-list__item">
             <a class="nav-list__link" href=""
-              >コンセプト<span class="nav-list__link--eng">CONCEPT</span></a
+              >コンセプト<span class="nav-list__link-eng">CONCEPT</span></a
             >
           </li>
           <li class="nav-list__item">
             <a class="nav-list__link" href=""
-              >事業内容<span class="nav-list__link--eng">SERVICE</span></a
+              >事業内容<span class="nav-list__link-eng">SERVICE</span></a
             >
           </li>
           <li class="nav-list__item">
             <a class="nav-list__link" href=""
-              >制作実績<span class="nav-list__link--eng">WORKS</span></a
+              >制作実績<span class="nav-list__link-eng">WORKS</span></a
             >
           </li>
           <li class="nav-list__item">
             <a class="nav-list__link" href=""
-              >デザイン事例<span class="nav-list__link--eng">EX.DESIGN</span></a
+              >デザイン事例<span class="nav-list__link-eng">EX.DESIGN</span></a
             >
           </li>
           <li class="nav-list__item">
             <a class="nav-list__link" href=""
-              >ブログ<span class="nav-list__link--eng">BLOG</span></a
+              >ブログ<span class="nav-list__link-eng">BLOG</span></a
             >
           </li>
         </ul>
-        <address class="card-tel">
+        <address class="nav-tel">
           <img
-            src="img/Icon awesome-phone-alt-1.png"
+            src="img/Icon awesome-phone-alt-2.png"
             alt="tel:"
-            class="card-tel__img"
+            class="nav-tel__img"
           />
-          <span class="card-tel__num">03-1234-5678</span>
-          <span class="card-tel__time">平日10：00～18：00</span>
+          <span class="nav-tel__num">03-1234-5678</span>
+          <span class="nav-tel__time">平日10：00～18：00</span>
         </address>
-        <a href="" class="btn-contact">
+        <a href="" class="nav-contact">
           <img
             src="img/Icon material-email.png"
             alt="email"
-            class="btn-contact__img"
+            class="nav-contact__img"
           />
-          <p class="btn-contact__text">お問い合わせ</p>
+          <p class="nav-contact__text">お問い合わせ</p>
         </a>
       </nav>
     </header>
     <!--TOP-->
-    <section class="section section--top">
-      <img src="img/fv-img01.png" alt="" class="section__bg-img" />
+    <section class="section section-top">
+      <img
+        src="img/fv-img01.png"
+        alt="top__bg-img"
+        class="section__bg-img"
+        id="test"
+      />
       <div class="container">
-        <div class="container__inner">
+        <div class="container__inner container-top__inner">
           <h1 class="section-top__heading">
             法人集客にフォーカスした<br />ホームページ制作のご提案を。
           </h1>
           <span class="section-top__text"
             >デザイン力&times;集客力で結果に繋げる</span
           >
-          <address class="card-tel">
-            <img
-              src="img/Icon awesome-phone-alt-1.png"
-              alt="tel:"
-              class="card-tel__img"
-            />
-            <span class="card-tel__num">03-1234-5678</span>
-            <span class="card-tel__time">平日10：00～18：00</span>
-          </address>
-          <a href="" class="btn-contact">
-            <p class="btn-contact__text">お問い合わせ</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-caret-right-fill btn-contact__arrow"
-              viewbox="0 0 16 16"
-            >
-              <path
-                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
-              />
-            </svg>
-          </a>
+          <div class="wrap-contact">
+            <address class="card-tel">
+              <span class="card-tel__num">
+                <img
+                  src="img/Icon awesome-phone-alt-1.png"
+                  alt="tel:"
+                  class="card-tel__img"
+                />03-1234-5678</span
+              >
+              <span class="card-tel__time">平日10：00～18：00</span>
+            </address>
+            <a href="" class="btn-contact">
+              <p class="btn-contact__text">お問い合わせ</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-caret-right-fill btn-contact__arrow"
+                viewbox="0 0 16 16"
+              >
+                <path
+                  d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                />
+              </svg>
+            </a>
+          </div>
           <div class="information">
             <p class="information__heading">NEWS</p>
             <p class="information__date">2020/00/00</p>
@@ -107,7 +115,7 @@
       </div>
     </section>
     <!--CONCEPT-->
-    <section class="section">
+    <section class="section section-concept">
       <div class="section-ttl section-ttl--left">
         <div class="section-ttl__bg--dot">
           <p class="section-ttl__text">CONCEPT</p>
@@ -116,13 +124,15 @@
       <div class="container">
         <div class="container__inner">
           <div class="section-main">
-            <img src="img/img-1.png" alt="" class="section-main__img" />
-            <h2 class="section-main__heading">
-              高クオリティのホームページを<br />お手頃価格でご提供
-            </h2>
-            <p class="section-main__lead">
-              平均受注単価:<em class="section-heading__lead--em">45～65</em>万円
-            </p>
+            <img src="img/img-3.png" alt="" class="section-main__img" />
+            <div class="section-main__content">
+              <h2 class="section-main__heading">
+                高クオリティのホームページを<br />お手頃価格でご提供
+              </h2>
+              <p class="section-main__lead">
+                平均受注単価:<em class="section-main__lead--em">45～65</em>万円
+              </p>
+            </div>
           </div>
           <p class="section__text">
             弊社は少数精鋭で制作を進めていくため、大手の制作会社と遜色ない高クオリティなホームページを低コストで制作できます。デザインからコーディング・開発まで基本的に全ての工程を自社内で行うため、無駄な中間コストがかかりません。またデザインが良いだけでなく、集客に繋がるようなご提案をいたします。
@@ -146,8 +156,8 @@
       </div>
     </section>
     <!--FEATURES-->
-    <section class="section section--features">
-      <img src="img/bg.png" alt="" class="section__bg-img" />
+    <section class="section section-features">
+      <img src="img/bg.png" alt="features__bg-img" class="section__bg-img" />
       <div class="container">
         <div class="container__inner">
           <div class="section-main">
@@ -184,7 +194,7 @@
       </div>
     </section>
     <!--SERVICE-->
-    <section class="section section--service">
+    <section class="section section-service">
       <div class="section-ttl section-ttl--right">
         <div class="section-ttl__bg--dot">
           <p class="section-ttl__text">SERVICE</p>
@@ -205,7 +215,7 @@
           />
           <h3 class="card__ttl">
             ホームページ制作事業
-            <span class="card__ttl--eng">WEBSITE DESIGN</span>
+            <span class="card__ttl-eng">WEBSITE DESIGN</span>
           </h3>
           <p class="card__text">
             事業内容についての文章事業内容についての文章事業内容についての文章事業内容についての文章事業内容についての文章事業内容についての文章
@@ -236,7 +246,7 @@
           />
           <h3 class="card__ttl">
             SEO対策事業
-            <span class="card__ttl--eng">SEARCH ENGINE MARKETING</span>
+            <span class="card__ttl-eng">SEARCH ENGINE MARKETING</span>
           </h3>
           <p class="card__text">
             事業内容についての文章事業内容についての文章事業内容についての文章事業内容についての文章事業内容についての文章事業内容についての文章
@@ -267,7 +277,7 @@
           />
           <h3 class="card__ttl">
             WEB運用事業
-            <span class="card__ttl--eng">WEB OPERATION</span>
+            <span class="card__ttl-eng">WEB OPERATION</span>
           </h3>
           <p class="card__text">
             事業内容についての文章事業内容についての文章事業内容についての文章事業内容についての文章事業内容についての文章事業内容についての文章
@@ -291,7 +301,7 @@
       </div>
     </section>
     <!--WORK-->
-    <section class="section section--work">
+    <section class="section section-work">
       <div class="section-ttl section-ttl--left">
         <div class="section-ttl__bg--dot">
           <p class="section-ttl__text">WORKS</p>
@@ -386,15 +396,15 @@
       </div>
     </section>
     <!--BLOG-->
-    <section class="section section--blog">
-      <img src="img/blog_bg.png" alt="" class="section__bg-img" />
+    <section class="section section-blog">
+      <img src="img/blog_bg.png" alt="blog__bg-img" class="section__bg-img" />
       <div class="section-ttl section-ttl--right">
         <div class="section-ttl__bg--dot">
           <p class="section-ttl__text section-ttl__text--white">BLOG</p>
         </div>
       </div>
-      <div class="container">
-        <div class="container__inner container__inner--blog">
+      <div class="container container-blog">
+        <div class="container__inner container-blog__inner">
           <ul class="blog-list">
             <li class="blog-list__item">
               <p class="blog-list__date">2020/00/00</p>
@@ -425,42 +435,49 @@
       </div>
     </section>
     <!--CONTACT-->
-    <section class="section">
-      <img src="img/contact01.png" alt="section__bg-img" />
+    <section class="section section-contact">
+      <img
+        src="img/contact01.png"
+        alt="contact__bg-img"
+        class="section__bg-img"
+      />
       <div class="container">
         <div class="container__inner">
           <h2 class="section-main__heading">
             お気軽にお問い合わせください！<br />サクッと概算見積書を作成します
           </h2>
-          <address class="card-tel">
-            <img
-              src="img/Icon awesome-phone-alt-1.png"
-              alt="tel:"
-              class="card-tel__img"
-            />
-            <span class="card-tel__num">03-1234-5678</span>
-            <span class="card-tel__time">平日10：00～18：00</span>
-          </address>
-          <a href="" class="btn-contact">
-            <p class="btn-contact__text">お問い合わせ</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-caret-right-fill btn-contact__arrow"
-              viewbox="0 0 16 16"
-            >
-              <path
-                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
-              />
-            </svg>
-          </a>
+          <div class="wrap-contact">
+            <address class="card-tel">
+              <span class="card-tel__num">
+                <img
+                  src="img/Icon awesome-phone-alt-1.png"
+                  alt="tel:"
+                  class="card-tel__img"
+                />03-1234-5678</span
+              >
+              <span class="card-tel__time">平日10：00～18：00</span>
+            </address>
+            <a href="" class="btn-contact">
+              <p class="btn-contact__text">お問い合わせ</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-caret-right-fill btn-contact__arrow"
+                viewbox="0 0 16 16"
+              >
+                <path
+                  d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
     <!--FOOTER-->
-    <footer>
+    <footer class="footer">
       <img src="img/パス -3.png" alt="logo" class="footer__logo" />
       <address class="footer-address">
         <p class="footer-address__postcode">〒123-4567</p>
@@ -472,4 +489,10 @@
       </p>
     </footer>
   </body>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"
+  ></script>
+  <script src="JS/main.js"></script>
 </html>
